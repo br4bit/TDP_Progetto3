@@ -1,4 +1,12 @@
 import TdP_collections.hash_table.sorted_table_map
+from builtins import print
+from openpyxl.reader.excel import load_workbook
+from builtins import list
+from builtins import range
+from openpyxl import cell
+import openpyxl
+from openpyxl import workbook
+
 def fail_func(w):
     #initializing the array auxiliar with 0 in each cell
     auxiliar = [0] * len(w)
@@ -52,6 +60,30 @@ def count_kmp(T,P):
                 i = array_aux[i-1]
     return count
 
+def load_excel():
+    print("Loading xls...")
+    wb = load_workbook('all-euro-data-2016-2017.xlsx')
+    print("Loading done...")
+    lista=list()
+    sheet = wb.get_sheet_by_name('E0')
+    for i in range(1, sheet.max_column):
+        value=sheet.cell(row=1,column=i).value
+        if(value == 'HomeTeam'):
+             for i in range(2, sheet.max_row):
+                b=sheet.cell(row=i, column=3).value
+                if b not in lista:
+                    lista.append(b)
+             break
+        else:
+            continue     
+    print(lista)
+    print(sheet.max_row)
+    # Print out values in column 2 
+    #for i in range(1, 11):
+        #print(i, sheet.cell(row=1, column=i).value)
+
+    
+
 def main():
     pattern = "acabacacd"
     text = "acfacabacabacacdkacabacacdacabacacd"
@@ -59,6 +91,8 @@ def main():
     print("Pattern: ",pattern)
     print("Numero di occorrenze KMP algorithm: ",count_kmp(text,pattern))
     print()
+    load_excel()
 
 if __name__ == '__main__':
     main()
+    
