@@ -1,11 +1,11 @@
 import TdP_collections.hash_table.sorted_table_map
+import hashlib
+from TdP_collections.hash_table.probe_hash_map import ProbeHashMap
+from pandas.tests.io.parser import index_col
+from TdP_collections.hash_table.chain_hash_map import ChainHashMap
+from TdP_collections.hash_table.sorted_table_map import SortedTableMap
 from builtins import print
-from openpyxl.reader.excel import load_workbook
-from builtins import list
-from builtins import range
-from openpyxl import cell
-import openpyxl
-from openpyxl import workbook
+import pandas as pd
 
 def fail_func(w):
     #initializing the array auxiliar with 0 in each cell
@@ -61,27 +61,15 @@ def count_kmp(T,P):
     return count
 
 def load_excel():
-    print("Loading xls...")
-    wb = load_workbook('all-euro-data-2016-2017.xlsx')
-    print("Loading done...")
-    lista=list()
-    sheet = wb.get_sheet_by_name('E0')
-    for i in range(1, sheet.max_column):
-        value=sheet.cell(row=1,column=i).value
-        if(value == 'HomeTeam'):
-             for i in range(2, sheet.max_row):
-                b=sheet.cell(row=i, column=3).value
-                if b not in lista:
-                    lista.append(b)
-             break
-        else:
-            continue     
-    print(lista)
-    print(sheet.max_row)
-    # Print out values in column 2 
-    #for i in range(1, 11):
-        #print(i, sheet.cell(row=1, column=i).value)
-
+    camp=ChainHashMap()
+    #df=pd.DataFrame()
+    #df = pd.read_excel('all-euro-data-2016-2017.xlsx', sheet_name='E0', usecols=range(10))
+    #print("Numero colonne: ",df.shape[0])
+    #print(df.at[1,'Div'])
+    id = int(hashlib.md5('ciao'.encode('utf-8')).hexdigest(), 16)
+    id2 = int(hashlib.md5('ciao'.encode('utf-8')).hexdigest(), 16)
+    print(id)
+    print(id2)
     
 
 def main():
@@ -91,8 +79,9 @@ def main():
     print("Pattern: ",pattern)
     print("Numero di occorrenze KMP algorithm: ",count_kmp(text,pattern))
     print()
-    load_excel()
+    
 
 if __name__ == '__main__':
-    main()
+    #main()
+    load_excel()
     
