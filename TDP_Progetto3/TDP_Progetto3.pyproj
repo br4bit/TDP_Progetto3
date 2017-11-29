@@ -21,7 +21,93 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="TdP_collections\graphs\bfs.py" />
+    <Compile Include="TdP_collections\graphs\dfs.py" />
+    <Compile Include="TdP_collections\graphs\graph.py" />
+    <Compile Include="TdP_collections\graphs\mst.py" />
+    <Compile Include="TdP_collections\graphs\partition.py" />
+    <Compile Include="TdP_collections\graphs\shortest_paths.py" />
+    <Compile Include="TdP_collections\graphs\topological_sort.py" />
+    <Compile Include="TdP_collections\graphs\transitive_closure.py" />
+    <Compile Include="TdP_collections\graphs\__init__.py" />
+    <Compile Include="TdP_collections\hash_table\chain_hash_map.py" />
+    <Compile Include="TdP_collections\hash_table\hash_map_base.py" />
+    <Compile Include="TdP_collections\hash_table\map_base.py" />
+    <Compile Include="TdP_collections\hash_table\probe_hash_map.py" />
+    <Compile Include="TdP_collections\hash_table\sorted_table_map.py" />
+    <Compile Include="TdP_collections\hash_table\unsorted_table_map.py" />
+    <Compile Include="TdP_collections\hash_table\__init__.py" />
+    <Compile Include="TdP_collections\list\doubly_linked_base.py" />
+    <Compile Include="TdP_collections\list\positional_list.py" />
+    <Compile Include="TdP_collections\list\__init__.py" />
+    <Compile Include="TdP_collections\map\avl_tree.py" />
+    <Compile Include="TdP_collections\map\binary_search_tree.py" />
+    <Compile Include="TdP_collections\map\map_base.py" />
+    <Compile Include="TdP_collections\map\red_black_tree.py" />
+    <Compile Include="TdP_collections\map\__init__.py" />
+    <Compile Include="TdP_collections\priority_queue\adaptable_heap_priority_queue.py" />
+    <Compile Include="TdP_collections\priority_queue\heap_priority_queue.py" />
+    <Compile Include="TdP_collections\priority_queue\priority_queue_base.py" />
+    <Compile Include="TdP_collections\priority_queue\sorted_priority_queue.py" />
+    <Compile Include="TdP_collections\priority_queue\unsorted_priority_queue.py" />
+    <Compile Include="TdP_collections\priority_queue\__init__.py" />
+    <Compile Include="TdP_collections\queue\array_queue.py" />
+    <Compile Include="TdP_collections\queue\queue.py" />
+    <Compile Include="TdP_collections\queue\__init__.py" />
+    <Compile Include="TdP_collections\text\find_boyer_moore.py" />
+    <Compile Include="TdP_collections\text\find_brute.py" />
+    <Compile Include="TdP_collections\text\find_kmp.py" />
+    <Compile Include="TdP_collections\text\lcs.py" />
+    <Compile Include="TdP_collections\tree\binary_tree.py" />
+    <Compile Include="TdP_collections\tree\linked_binary_tree.py" />
+    <Compile Include="TdP_collections\tree\tree.py" />
+    <Compile Include="TdP_collections\tree\__init__.py" />
+    <Compile Include="TdP_collections\__init__.py" />
     <Compile Include="TDP_Progetto3.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TdP_collections\" />
+    <Folder Include="TdP_collections\graphs\" />
+    <Folder Include="TdP_collections\hash_table\" />
+    <Folder Include="TdP_collections\hash_table\__pycache__\" />
+    <Folder Include="TdP_collections\list\" />
+    <Folder Include="TdP_collections\list\__pycache__\" />
+    <Folder Include="TdP_collections\map\" />
+    <Folder Include="TdP_collections\map\__pycache__\" />
+    <Folder Include="TdP_collections\priority_queue\" />
+    <Folder Include="TdP_collections\priority_queue\__pycache__\" />
+    <Folder Include="TdP_collections\queue\" />
+    <Folder Include="TdP_collections\queue\__pycache__\" />
+    <Folder Include="TdP_collections\text\" />
+    <Folder Include="TdP_collections\tree\" />
+    <Folder Include="TdP_collections\tree\__pycache__\" />
+    <Folder Include="TdP_collections\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TdP_collections\.DS_Store" />
+    <Content Include="TdP_collections\hash_table\__pycache__\chain_hash_map.cpython-36.pyc" />
+    <Content Include="TdP_collections\hash_table\__pycache__\hash_map_base.cpython-36.pyc" />
+    <Content Include="TdP_collections\hash_table\__pycache__\map_base.cpython-36.pyc" />
+    <Content Include="TdP_collections\hash_table\__pycache__\probe_hash_map.cpython-36.pyc" />
+    <Content Include="TdP_collections\hash_table\__pycache__\unsorted_table_map.cpython-36.pyc" />
+    <Content Include="TdP_collections\hash_table\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="TdP_collections\list\__pycache__\doubly_linked_base.cpython-36.pyc" />
+    <Content Include="TdP_collections\list\__pycache__\positional_list.cpython-36.pyc" />
+    <Content Include="TdP_collections\list\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="TdP_collections\map\.DS_Store" />
+    <Content Include="TdP_collections\priority_queue\__pycache__\heap_priority_queue.cpython-36.pyc" />
+    <Content Include="TdP_collections\priority_queue\__pycache__\priority_queue_base.cpython-36.pyc" />
+    <Content Include="TdP_collections\priority_queue\__pycache__\sorted_priority_queue.cpython-36.pyc" />
+    <Content Include="TdP_collections\priority_queue\__pycache__\unsorted_priority_queue.cpython-36.pyc" />
+    <Content Include="TdP_collections\priority_queue\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="TdP_collections\queue\__pycache__\array_queue.cpython-36.pyc" />
+    <Content Include="TdP_collections\queue\__pycache__\queue.cpython-36.pyc" />
+    <Content Include="TdP_collections\queue\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="TdP_collections\tree\__pycache__\binary_tree.cpython-36.pyc" />
+    <Content Include="TdP_collections\tree\__pycache__\linked_binary_tree.cpython-36.pyc" />
+    <Content Include="TdP_collections\tree\__pycache__\tree.cpython-36.pyc" />
+    <Content Include="TdP_collections\tree\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="TdP_collections\__pycache__\__init__.cpython-36.pyc" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

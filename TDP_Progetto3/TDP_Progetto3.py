@@ -1,4 +1,4 @@
-
+import TdP_collections.hash_table.sorted_table_map
 def fail_func(w):
     #initializing the array auxiliar with 0 in each cell
     auxiliar = [0] * len(w)
