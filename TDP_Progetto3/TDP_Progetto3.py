@@ -63,6 +63,7 @@ def count_kmp(T,P):
 def load_excel():
     camp=ProbeHashMap()
     key="E0"
+    key1="E1"
     #df=pd.DataFrame()
     #df = pd.read_excel('all-euro-data-2016-2017.xlsx', sheet_name='E0', usecols=range(10))
     #camp.setdefault(df.at[1,'Div'])
@@ -71,10 +72,12 @@ def load_excel():
     #camp[key]=[df['HomeTeam'],df['Date']]
     camp[key]=['ciao',2,3,4,5]
     camp[key].append(6)
+    camp[key1]=[2]
+    camp[key1].append(3)
     print(camp.get(key)[0])
     print(len(camp))
     for k in camp.keys():
-        print(camp[key])
+        print("Chiave: ",k," valore: ",camp[k])
     #print("Numero colonne: ",df.shape[0])
     #print(df.at[1,'Div'])
     #id = int(hashlib.md5('ciao'.encode('utf-8')).hexdigest(), 16)
