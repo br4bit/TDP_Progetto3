@@ -71,7 +71,7 @@ def load_excel():
     #camp[key]=[df['HomeTeam'],df['Date']]
     camp[key]=['ciao',2,3,4,5]
     camp[key].append(6)
-    print(camp.get(key).count('ciao'))
+    print(camp.get(key)[0])
     print(len(camp))
     for k in camp.keys():
         print(camp[key])
