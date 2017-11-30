@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="modulo1.py" />
     <Compile Include="TdP_collections\graphs\bfs.py" />
     <Compile Include="TdP_collections\graphs\dfs.py" />
     <Compile Include="TdP_collections\graphs\graph.py" />

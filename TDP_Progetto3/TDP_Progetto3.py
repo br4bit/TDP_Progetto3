@@ -61,15 +61,26 @@ def count_kmp(T,P):
     return count
 
 def load_excel():
-    camp=ChainHashMap()
+    camp=ProbeHashMap()
+    key="E0"
     #df=pd.DataFrame()
     #df = pd.read_excel('all-euro-data-2016-2017.xlsx', sheet_name='E0', usecols=range(10))
+    #camp.setdefault(df.at[1,'Div'])
+    #df=df.set_index("Div")
+    #print(df.head())
+    #camp[key]=[df['HomeTeam'],df['Date']]
+    camp[key]=['ciao',2,3,4,5]
+    camp[key].append(6)
+    print(camp.get(key).count('ciao'))
+    print(len(camp))
+    for k in camp.keys():
+        print(camp[key])
     #print("Numero colonne: ",df.shape[0])
     #print(df.at[1,'Div'])
-    id = int(hashlib.md5('ciao'.encode('utf-8')).hexdigest(), 16)
-    id2 = int(hashlib.md5('ciao'.encode('utf-8')).hexdigest(), 16)
-    print(id)
-    print(id2)
+    #id = int(hashlib.md5('ciao'.encode('utf-8')).hexdigest(), 16)
+    #id2 = int(hashlib.md5('ciao'.encode('utf-8')).hexdigest(), 16)
+    #print(id)
+    #print(id2)
     
 
 def main():
