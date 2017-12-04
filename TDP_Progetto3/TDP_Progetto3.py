@@ -6,6 +6,18 @@ from TdP_collections.hash_table.chain_hash_map import ChainHashMap
 from TdP_collections.hash_table.sorted_table_map import SortedTableMap
 from builtins import print
 import pandas as pd
+import sys
+from PyQt5 import QtCore, QtGui, uic, QtWidgets
+
+qtCreatorFile = "gui_camp.ui" # Enter file here.
+
+Ui_MainWindow, QtBaseClass = uic.loadUiType(qtCreatorFile)
+
+class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
+    def __init__(self):
+        QtWidgets.QMainWindow.__init__(self)
+        Ui_MainWindow.__init__(self)
+        self.setupUi(self)
 
 def fail_func(w):
     #initializing the array auxiliar with 0 in each cell
@@ -96,6 +108,10 @@ def main():
     
 
 if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+    window = MyApp()
+    window.show()
+    sys.exit(app.exec_())
     #main()
-    load_excel()
+    #load_excel()
     
